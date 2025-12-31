@@ -24,14 +24,14 @@ export default function HomePage() {
 
           <div className="max-w-2xl mx-auto mb-12 text-lg leading-relaxed opacity-80 italic animate-slide-up" style={{ animationDelay: '0.2s' }}>
             <span className="text-secondary text-2xl mx-4">❝</span>
-            A bird doesn't sing because it has an answer.<br />
+            A bird doesn&apos;t sing because it has an answer.<br />
             It sings because it has a song.
             <span className="text-secondary text-2xl mx-4">❞</span>
           </div>
 
           <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-12 opacity-85 animate-slide-up" style={{ animationDelay: '0.4s' }}>
             Capturing your pre-wedding moments in the enchanting landscapes of Chiang Mai, Thailand.
-            We create memories that resonate with beauty, just like a songbird's melody.
+            We create memories that resonate with beauty, just like a songbird&apos;s melody.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
@@ -72,7 +72,7 @@ export default function HomePage() {
             <p className="text-base leading-relaxed mb-6 opacity-85">
               Founded by Nonthawat Pinchai and Benyapa Varalert, Mavis Studio brings a fresh perspective
               to pre-wedding photography in Chiang Mai, Thailand. We specialize in serving international
-              couples from China and Singapore who dream of capturing their love story against Thailand's
+              couples from China and Singapore who dream of capturing their love story against Thailand&apos;s
               stunning landscapes.
             </p>
 
@@ -106,7 +106,7 @@ export default function HomePage() {
           {/* Image Placeholder */}
           <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
             <div className="w-full h-full bg-gradient-to-br from-accent to-primary flex items-center justify-center text-tertiary text-lg italic p-12 text-center">
-              "Your beautiful couple photography<br />will be displayed here"
+              &quot;Your beautiful couple photography<br />will be displayed here&quot;
             </div>
 
             {/* Decorative Frames */}

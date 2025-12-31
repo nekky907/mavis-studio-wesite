@@ -3,6 +3,7 @@ import { Footer } from '@/components/Footer';
 import { createClient } from '@/lib/supabase/server';
 import Image from 'next/image';
 import { Camera } from 'lucide-react';
+import { TeamMember } from '@/types';
 
 export const metadata = {
   title: 'Our Team - Mavis Studio',
@@ -17,7 +18,7 @@ export default async function TeamPage() {
   const { data: teamMembers } = await supabase
     .from('team_members')
     .select('*')
-    .order('order', { ascending: true });
+    .order('order', { ascending: true }) as { data: TeamMember[] | null };
 
   return (
     <div className="bg-tertiary text-primary">
@@ -105,7 +106,7 @@ export default async function TeamPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="font-serif text-4xl mb-6">Join Our Team</h2>
           <p className="text-lg opacity-80 mb-8">
-            We're always looking for talented photographers to join the Mavis Studio family
+            We&apos;re always looking for talented photographers to join the Mavis Studio family
           </p>
           <a
             href="mailto:careers@mavisstudio.com"

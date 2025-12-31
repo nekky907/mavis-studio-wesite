@@ -59,12 +59,12 @@ export default function ContactPage() {
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl mb-8 leading-tight">
-            Let's Create<br />
+            Let&apos;s Create<br />
             <span className="text-secondary">Beautiful Memories</span>
           </h1>
 
           <p className="text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
-            We're excited to hear from you and discuss your pre-wedding photography
+            We&apos;re excited to hear from you and discuss your pre-wedding photography
           </p>
         </div>
       </section>
@@ -76,12 +76,12 @@ export default function ContactPage() {
           <div>
             <h2 className="font-serif text-3xl md:text-4xl mb-4">Send Us a Message</h2>
             <p className="text-base opacity-80 mb-8">
-              Fill out the form and we'll get back to you within 24 hours
+              Fill out the form and we&apos;ll get back to you within 24 hours
             </p>
 
             {submitSuccess && (
               <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
-                Thank you! Your booking request has been submitted successfully. We'll contact you soon.
+                Thank you! Your booking request has been submitted successfully. We&apos;ll contact you soon.
               </div>
             )}
 
@@ -182,7 +182,7 @@ export default function ContactPage() {
           <div>
             <h2 className="font-serif text-3xl md:text-4xl mb-4">Contact Information</h2>
             <p className="text-base opacity-80 mb-8">
-              We're here to answer any questions you may have
+              We&apos;re here to answer any questions you may have
             </p>
 
             <div className="space-y-6">
@@ -231,7 +231,7 @@ export default function ContactPage() {
 
       {/* Map Placeholder */}
       <section className="h-96 bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-primary text-xl italic">
-        "Map of Chiang Mai will be displayed here"
+        &quot;Map of Chiang Mai will be displayed here&quot;
       </section>
 
       <Footer />

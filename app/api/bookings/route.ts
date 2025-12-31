@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     const supabase = await createClient();
 
     // Insert booking into database
-    const { data: booking, error } = await supabase
+    const { data: booking, error } = await (supabase as any)
       .from('bookings')
       .insert([
         {

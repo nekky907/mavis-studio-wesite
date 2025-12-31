@@ -2,6 +2,7 @@ import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { createClient } from '@/lib/supabase/server';
 import Image from 'next/image';
+import { PortfolioItem } from '@/types';
 
 export const metadata = {
   title: 'Portfolio - Mavis Studio',
@@ -16,7 +17,7 @@ export default async function PortfolioPage() {
   const { data: portfolioItems } = await supabase
     .from('portfolio_items')
     .select('*')
-    .order('order', { ascending: true });
+    .order('order', { ascending: true }) as { data: PortfolioItem[] | null };
 
   return (
     <div className="bg-tertiary text-primary">
@@ -31,11 +32,11 @@ export default async function PortfolioPage() {
 
           <h1 className="font-serif text-5xl md:text-6xl mb-8 leading-tight">
             Portfolio<br />
-            <span className="text-secondary">Love Stories We've Captured</span>
+            <span className="text-secondary">Love Stories We&apos;ve Captured</span>
           </h1>
 
           <p className="text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
-            Every photograph is a testament to the unique beauty of each couple's journey
+            Every photograph is a testament to the unique beauty of each couple&apos;s journey
           </p>
         </div>
       </section>
@@ -72,7 +73,7 @@ export default async function PortfolioPage() {
               <div className="text-6xl mb-6">📸</div>
               <h3 className="font-serif text-3xl mb-4">Portfolio Coming Soon</h3>
               <p className="text-lg opacity-70">
-                We're currently curating our best work to showcase here.
+                We&apos;re currently curating our best work to showcase here.
               </p>
             </div>
           )}

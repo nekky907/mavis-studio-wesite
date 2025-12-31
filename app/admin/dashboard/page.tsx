@@ -2,6 +2,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
 import { Calendar, Image as ImageIcon, Users, LogOut, Mail } from 'lucide-react';
+import { Booking } from '@/types';
 
 export default async function AdminDashboardPage() {
   const supabase = await createClient();
@@ -37,7 +38,7 @@ export default async function AdminDashboardPage() {
     .from('bookings')
     .select('*')
     .order('created_at', { ascending: false })
-    .limit(5);
+    .limit(5) as { data: Booking[] | null };
 
   return (
     <div className="min-h-screen bg-tertiary">

@@ -39,7 +39,7 @@ export default function AboutPage() {
             <p>
               Founded by Nonthawat Pinchai and Benyapa Varalert, Mavis Studio brings a fresh perspective
               to pre-wedding photography in Chiang Mai, Thailand. We specialize in serving international
-              couples from China and Singapore who dream of capturing their love story against Thailand's
+              couples from China and Singapore who dream of capturing their love story against Thailand&apos;s
               stunning landscapes.
             </p>
 
