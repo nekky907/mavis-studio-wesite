@@ -2,7 +2,10 @@
   "common": {
     "bookNow": "Book Now",
     "learnMore": "Learn More",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "explorePackages": "Explore Our Packages",
+    "viewPortfolio": "View Portfolio",
+    "bookThisPackage": "Book This Package"
   },
   "nav": {
     "home": "Home",
@@ -12,11 +15,318 @@
     "team": "Team",
     "contact": "Contact"
   },
+  "footer": {
+    "location": "Chiang Mai, Thailand | Est. 2023",
+    "tagline": "Where Every Moment Has a Song",
+    "copyright": "© {year} Mavis Studio. All rights reserved."
+  },
   "home": {
     "hero": {
-      "title": "Where Every Moment Has a Song",
-      "subtitle": "A bird doesn't sing because it has an answer. It sings because it has a song.",
-      "description": "Capturing your pre-wedding moments in the enchanting landscapes of Chiang Mai, Thailand."
+      "title": "Where Every Moment",
+      "titleHighlight": "Has a Song",
+      "quote": "A bird doesn't sing because it has an answer. It sings because it has a song.",
+      "description": "Capturing your pre-wedding moments in the enchanting landscapes of Chiang Mai, Thailand. We create memories that resonate with beauty, just like a songbird's melody."
+    },
+    "about": {
+      "label": "About Mavis Studio",
+      "title": "Memorial Creators",
+      "titleYear": "Since 2023",
+      "paragraph1": "Founded by Nonthawat Pinchai and Benyapa Varalert, Mavis Studio brings a fresh perspective to pre-wedding photography in Chiang Mai, Thailand. We specialize in serving international couples from China and Singapore who dream of capturing their love story against Thailand's stunning landscapes.",
+      "paragraph2": "Just as a songbird sings not because it has an answer but because it has a song, we create not just because we can, but because we have a vision. Every moment is decorated with beautiful details, every step in your journey crafted with care.",
+      "stat1Label": "5 Professional Photographers",
+      "stat1Value": "MavTeam",
+      "stat2Label": "Based in Chiang Mai",
+      "stat2Value": "Thailand",
+      "stat3Label": "International Clients",
+      "stat3Value": "China & Singapore",
+      "imagePlaceholder": "Your beautiful couple photography will be displayed here"
+    },
+    "services": {
+      "label": "Our Photography Packages",
+      "title": "Create Your Perfect Memory",
+      "description": "From intimate half-day sessions to comprehensive full-day experiences, we offer tailored packages to capture your unique love story.",
+      "halfDay": {
+        "label": "Half Day Experience",
+        "price": "40,000 - 50,000 ฿",
+        "feature1": "4 hours photographer service",
+        "feature2": "2 shooting locations",
+        "feature3": "1 gown & 1 suit styling",
+        "feature4": "10-15 edited photos",
+        "feature5": "Hotel & transportation",
+        "feature6": "Professional makeup artist"
+      },
+      "fullDay": {
+        "label": "Full Day Experience",
+        "badge": "Most Popular",
+        "price": "70,000 - 100,000 ฿",
+        "feature1": "8-10 hours photographer service",
+        "feature2": "2-4 shooting locations",
+        "feature3": "2-3 style gown & suit changes",
+        "feature4": "15+ edited photos",
+        "feature5": "Hotel & transportation",
+        "feature6": "Professional makeup artist",
+        "feature7": "Dinner included",
+        "feature8": "Physical albums & prints"
+      }
+    },
+    "values": {
+      "title": "Our Keys to Excellence",
+      "description": "Three essential elements guide every step of your journey with us",
+      "experience": {
+        "title": "Experience",
+        "description": "Always take pride in your job and create positive energy to motivate everyone involved."
+      },
+      "courtesy": {
+        "title": "Courtesy",
+        "description": "Good manners and proper conduct support the completion of every step in the journey."
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "Understand circumstances and quickly adapt skills to achieve efficiency and effectiveness."
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "Our Story",
+      "title": "Memorial Creators",
+      "titleHighlight": "Since 2023",
+      "description": "Every photograph tells a story, and we are honored to tell yours"
+    },
+    "story": {
+      "title": "Our Beginning",
+      "paragraph1": "Founded by Nonthawat Pinchai and Benyapa Varalert, Mavis Studio brings a fresh perspective to pre-wedding photography in Chiang Mai, Thailand. We specialize in serving international couples from China and Singapore who dream of capturing their love story against Thailand's stunning landscapes.",
+      "paragraph2": "Just as a songbird sings not because it has an answer but because it has a song, we create not just because we can, but because we have a vision. Every moment is decorated with beautiful details, every step in your journey crafted with care.",
+      "paragraph3": "With over 5 professional photographers on our team, we bring diverse perspectives and expertise to every shoot. Our international experience allows us to understand and cater to the unique preferences of couples from different cultures."
+    },
+    "stats": {
+      "photographers": "Professional Photographers",
+      "happyCouples": "Happy Couples",
+      "locations": "Stunning Locations",
+      "countriesServed": "Countries Served"
+    },
+    "coreValues": {
+      "title": "Our Core Values",
+      "description": "Three pillars that guide our work and relationships with clients"
+    },
+    "values": {
+      "experience": {
+        "title": "Experience",
+        "description": "We take pride in our craft and bring positive energy to every session, creating an atmosphere where authentic moments naturally unfold."
+      },
+      "courtesy": {
+        "title": "Courtesy",
+        "description": "Professionalism and respect form the foundation of our service, ensuring every step of your journey is handled with care."
+      },
+      "flexibility": {
+        "title": "Flexibility",
+        "description": "We adapt to changing circumstances and unique requirements, leveraging our skills to deliver exceptional results."
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "Our Services",
+      "title": "Pre-Wedding Photography",
+      "titleHighlight": "Packages",
+      "description": "Choose the perfect package to capture your love story in Chiang Mai"
+    },
+    "packages": {
+      "mostPopular": "Most Popular",
+      "includes": "Package Includes:",
+      "choosePackage": "Choose This Package",
+      "halfDay": {
+        "name": "Half Day Experience",
+        "feature1": "4 hours of photographer service",
+        "feature2": "2 shooting locations",
+        "feature3": "1 gown & 1 suit styling",
+        "feature4": "10-15 specially edited photos",
+        "feature5": "Hotel accommodation",
+        "feature6": "Transportation included",
+        "feature7": "Professional makeup artist",
+        "feature8": "Digital file delivery"
+      },
+      "fullDay": {
+        "name": "Full Day Experience",
+        "feature1": "8-10 hours of photographer service",
+        "feature2": "2-4 shooting locations",
+        "feature3": "2-3 style gown & suit changes",
+        "feature4": "15+ specially edited photos",
+        "feature5": "Hotel accommodation",
+        "feature6": "Transportation included",
+        "feature7": "Professional makeup artist",
+        "feature8": "Dinner included",
+        "feature9": "Physical albums & prints",
+        "feature10": "Digital file delivery"
+      }
+    },
+    "booking": {
+      "title": "How to Book with Us",
+      "description": "Our simple 5-step booking process",
+      "step1": {
+        "title": "Inquiry",
+        "description": "Contact us through your preferred channel"
+      },
+      "step2": {
+        "title": "Consultation",
+        "description": "Discuss your vision and preferences"
+      },
+      "step3": {
+        "title": "Booking",
+        "description": "Confirm your package and date"
+      },
+      "step4": {
+        "title": "Photo Session",
+        "description": "Experience your dream photoshoot"
+      },
+      "step5": {
+        "title": "Delivery",
+        "description": "Receive your photos within 1 week"
+      }
+    },
+    "info": {
+      "title": "Important Information",
+      "timeline": {
+        "title": "Booking Timeline",
+        "content": "1-12 months in advance recommended"
+      },
+      "payment": {
+        "title": "Payment",
+        "content": "50% deposit upon booking, 50% after completion"
+      },
+      "cancellation": {
+        "title": "Cancellation",
+        "content": "Deposit is non-refundable upon cancellation"
+      },
+      "weather": {
+        "title": "Weather Policy",
+        "content": "We continue shooting or find indoor locations"
+      },
+      "delivery": {
+        "title": "Delivery Time",
+        "content": "Maximum 1 week or as discussed"
+      },
+      "copyright": {
+        "title": "Copyright",
+        "content": "Photos are owned by customers"
+      }
+    },
+    "cta": {
+      "title": "Ready to Book?",
+      "description": "Let's create beautiful memories together in Chiang Mai",
+      "button": "Contact Us Now"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "label": "Our Work",
+      "title": "Portfolio",
+      "titleHighlight": "Love Stories We've Captured",
+      "description": "Every photograph is a testament to the unique beauty of each couple's journey"
+    },
+    "loading": "Loading...",
+    "empty": {
+      "title": "Portfolio Coming Soon",
+      "description": "We're currently curating our best work to showcase here."
+    }
+  },
+  "team": {
+    "hero": {
+      "label": "Meet the Team",
+      "title": "The Faces Behind",
+      "titleHighlight": "Your Memories",
+      "description": "Our passionate team of photographers dedicated to capturing your special moments"
+    },
+    "members": {
+      "nonthawat": {
+        "role": "Co-Founder & Lead Photographer",
+        "bio": "Passionate about capturing authentic moments and beautiful landscapes."
+      },
+      "benyapa": {
+        "role": "Co-Founder & Creative Director",
+        "bio": "Specializes in creative direction and styling for memorable photoshoots."
+      }
+    },
+    "join": {
+      "title": "Join Our Team",
+      "description": "We're always looking for talented photographers to join the Mavis Studio family",
+      "button": "Get in Touch"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "Get in Touch",
+      "title": "Let's Create",
+      "titleHighlight": "Beautiful Memories",
+      "description": "We're excited to hear from you and discuss your pre-wedding photography"
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "description": "Fill out the form and we'll get back to you within 24 hours",
+      "successMessage": "Thank you! Your booking request has been submitted successfully. We'll contact you soon.",
+      "errorAlert": "Failed to submit booking. Please try again.",
+      "name": {
+        "label": "Your Name",
+        "placeholder": "Enter your name"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "+66 XX XXX XXXX"
+      },
+      "date": {
+        "label": "Preferred Date"
+      },
+      "package": {
+        "label": "Package Interest",
+        "halfDay": "Half Day Package",
+        "fullDay": "Full Day Package",
+        "custom": "Custom Package"
+      },
+      "currency": {
+        "label": "Currency Preference",
+        "thb": "Thai Baht (฿)",
+        "cny": "Chinese Yuan (¥)",
+        "sgd": "Singapore Dollar (S$)"
+      },
+      "message": {
+        "label": "Your Message",
+        "placeholder": "Tell us about your vision..."
+      },
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "description": "We're here to answer any questions you may have"
+    },
+    "info": {
+      "location": {
+        "title": "Location",
+        "value": "Chiang Mai, Thailand"
+      },
+      "email": {
+        "title": "Email",
+        "value": "Coming Soon"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "Coming Soon"
+      },
+      "hours": {
+        "title": "Business Hours",
+        "value": "To be announced"
+      }
+    },
+    "social": {
+      "title": "Follow Us",
+      "description": "Stay connected with us on social media"
+    },
+    "map": {
+      "placeholder": "Map of Chiang Mai will be displayed here"
     }
   }
 }

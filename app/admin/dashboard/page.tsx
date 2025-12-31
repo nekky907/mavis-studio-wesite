@@ -49,8 +49,8 @@ export default async function AdminDashboardPage() {
           <Image
             src="/mavis-logo.svg"
             alt="Mavis Studio"
-            width={40}
-            height={48}
+            width={60}
+            height={72}
             className="brightness-0 invert"
           />
           <div>

@@ -37,8 +37,8 @@ export default async function ManageTeamPage() {
           <Image
             src="/mavis-logo.svg"
             alt="Mavis Studio"
-            width={32}
-            height={38}
+            width={50}
+            height={60}
             className="brightness-0 invert"
           />
           <Link

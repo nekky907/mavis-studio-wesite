@@ -43,8 +43,8 @@ export default function AdminLoginPage() {
             <Image
               src="/mavis-logo.svg"
               alt="Mavis Studio"
-              width={60}
-              height={72}
+              width={90}
+              height={108}
               className="object-contain"
             />
           </div>

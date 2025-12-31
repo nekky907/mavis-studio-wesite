@@ -1,6 +1,11 @@
+'use client';
+
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export function Footer() {
+  const t = useTranslations();
+
   return (
     <footer className="bg-primary text-tertiary py-16 px-4">
       <div className="max-w-7xl mx-auto text-center">
@@ -9,37 +14,37 @@ export function Footer() {
             MAVIS STUDIO
           </div>
           <div className="text-sm text-secondary tracking-[0.2em]">
-            Chiang Mai, Thailand • Est. 2023
+            {t('footer.location')}
           </div>
         </div>
 
         <div className="text-lg italic mb-8 opacity-80">
-          Where Every Moment Has a Song
+          {t('footer.tagline')}
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
           <Link href="/" className="hover:text-secondary transition-colors">
-            Home
+            {t('nav.home')}
           </Link>
           <Link href="/about" className="hover:text-secondary transition-colors">
-            About
+            {t('nav.about')}
           </Link>
           <Link href="/services" className="hover:text-secondary transition-colors">
-            Services
+            {t('nav.services')}
           </Link>
           <Link href="/portfolio" className="hover:text-secondary transition-colors">
-            Portfolio
+            {t('nav.portfolio')}
           </Link>
           <Link href="/team" className="hover:text-secondary transition-colors">
-            Team
+            {t('nav.team')}
           </Link>
           <Link href="/contact" className="hover:text-secondary transition-colors">
-            Contact
+            {t('nav.contact')}
           </Link>
         </div>
 
         <div className="border-t border-secondary/20 pt-8 text-sm opacity-60">
-          © {new Date().getFullYear()} Mavis Studio. All rights reserved.
+          {t('footer.copyright', { year: new Date().getFullYear() })}
         </div>
       </div>
     </footer>

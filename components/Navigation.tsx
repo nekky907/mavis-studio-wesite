@@ -4,24 +4,27 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
-
-const navLinks = [
-  { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Team', href: '/team' },
-  { name: 'Contact', href: '/contact' },
-];
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export function Navigation() {
+  const t = useTranslations();
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Pages with dark hero sections that need light navbar initially
-  const darkHeroPages = ['/about', '/services', '/portfolio', '/team', '/contact'];
+  const navLinks = [
+    { name: t('nav.home'), href: '/' },
+    { name: t('nav.about'), href: '/about' },
+    { name: t('nav.services'), href: '/services' },
+    { name: t('nav.portfolio'), href: '/portfolio' },
+    { name: t('nav.team'), href: '/team' },
+    { name: t('nav.contact'), href: '/contact' },
+  ];
+
+  // Pages with dark hero sections that need light navbar initially (including homepage with slideshow)
+  const darkHeroPages = ['/', '/about', '/services', '/portfolio', '/team', '/contact'];
   const isDarkHero = darkHeroPages.includes(pathname);
 
   useEffect(() => {
@@ -52,12 +55,12 @@ export function Navigation() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className={cn('relative h-12 transition-all', useLightColors ? 'brightness-0 invert' : '')}>
+            <div className={cn('relative h-24 transition-all', useLightColors ? 'brightness-0 invert' : '')}>
               <Image
                 src="/mavis-logo.svg"
                 alt="Mavis Studio"
-                width={40}
-                height={48}
+                width={140}
+                height={168}
                 className="object-contain"
                 priority
               />
@@ -65,7 +68,7 @@ export function Navigation() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -80,6 +83,12 @@ export function Navigation() {
                 {link.name}
               </Link>
             ))}
+            <LanguageSwitcher
+              className={cn(
+                'hover:bg-white/10',
+                useLightColors ? 'text-tertiary' : 'text-primary'
+              )}
+            />
             <Link
               href="/contact"
               className={cn(
@@ -89,7 +98,7 @@ export function Navigation() {
                 'hover:shadow-xl hover:-translate-y-0.5'
               )}
             >
-              Book Now
+              {t('common.bookNow')}
             </Link>
           </div>
 
@@ -141,12 +150,20 @@ export function Navigation() {
                 {link.name}
               </Link>
             ))}
+            <div className="pt-4 border-t border-white/10">
+              <LanguageSwitcher
+                className={cn(
+                  'w-full justify-center',
+                  useLightColors ? 'text-tertiary' : 'text-primary'
+                )}
+              />
+            </div>
             <Link
               href="/contact"
               className="block w-full px-6 py-3 rounded-full font-medium text-sm tracking-wide text-center bg-gradient-to-r from-secondary to-accent text-primary"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Book Now
+              {t('common.bookNow')}
             </Link>
           </div>
         )}

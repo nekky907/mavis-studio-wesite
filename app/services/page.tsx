@@ -1,64 +1,64 @@
+'use client';
+
 import Link from 'next/link';
 import { Navigation } from '@/components/Navigation';
 import { Footer } from '@/components/Footer';
 import { Check } from 'lucide-react';
-
-export const metadata = {
-  title: 'Services & Packages - Mavis Studio',
-  description: 'Explore our pre-wedding photography packages in Chiang Mai. Half-day and full-day experiences available.',
-};
+import { useTranslations } from 'next-intl';
 
 export default function ServicesPage() {
+  const t = useTranslations();
+
   const packages = [
     {
-      name: 'Half Day Experience',
+      name: t('services.packages.halfDay.name'),
       price: '40,000 - 50,000 ฿',
       features: [
-        '4 hours of photographer service',
-        '2 shooting locations',
-        '1 gown & 1 suit styling',
-        '10-15 specially edited photos',
-        'Hotel accommodation',
-        'Transportation included',
-        'Professional makeup artist',
-        'Digital file delivery',
+        t('services.packages.halfDay.feature1'),
+        t('services.packages.halfDay.feature2'),
+        t('services.packages.halfDay.feature3'),
+        t('services.packages.halfDay.feature4'),
+        t('services.packages.halfDay.feature5'),
+        t('services.packages.halfDay.feature6'),
+        t('services.packages.halfDay.feature7'),
+        t('services.packages.halfDay.feature8'),
       ],
       featured: false,
     },
     {
-      name: 'Full Day Experience',
+      name: t('services.packages.fullDay.name'),
       price: '70,000 - 100,000 ฿',
       features: [
-        '8-10 hours of photographer service',
-        '2-4 shooting locations',
-        '2-3 style gown & suit changes',
-        '15+ specially edited photos',
-        'Hotel accommodation',
-        'Transportation included',
-        'Professional makeup artist',
-        'Dinner included',
-        'Physical albums & prints',
-        'Digital file delivery',
+        t('services.packages.fullDay.feature1'),
+        t('services.packages.fullDay.feature2'),
+        t('services.packages.fullDay.feature3'),
+        t('services.packages.fullDay.feature4'),
+        t('services.packages.fullDay.feature5'),
+        t('services.packages.fullDay.feature6'),
+        t('services.packages.fullDay.feature7'),
+        t('services.packages.fullDay.feature8'),
+        t('services.packages.fullDay.feature9'),
+        t('services.packages.fullDay.feature10'),
       ],
       featured: true,
     },
   ];
 
   const bookingProcess = [
-    { step: '01', title: 'Inquiry', description: 'Contact us through your preferred channel' },
-    { step: '02', title: 'Consultation', description: 'Discuss your vision and preferences' },
-    { step: '03', title: 'Booking', description: 'Confirm your package and date' },
-    { step: '04', title: 'Photo Session', description: 'Experience your dream photoshoot' },
-    { step: '05', title: 'Delivery', description: 'Receive your photos within 1 week' },
+    { step: '01', title: t('services.booking.step1.title'), description: t('services.booking.step1.description') },
+    { step: '02', title: t('services.booking.step2.title'), description: t('services.booking.step2.description') },
+    { step: '03', title: t('services.booking.step3.title'), description: t('services.booking.step3.description') },
+    { step: '04', title: t('services.booking.step4.title'), description: t('services.booking.step4.description') },
+    { step: '05', title: t('services.booking.step5.title'), description: t('services.booking.step5.description') },
   ];
 
   const importantInfo = [
-    { title: 'Booking Timeline', content: '1-12 months in advance recommended' },
-    { title: 'Payment', content: '50% deposit upon booking, 50% after completion' },
-    { title: 'Cancellation', content: 'Deposit is non-refundable upon cancellation' },
-    { title: 'Weather Policy', content: 'We continue shooting or find indoor locations' },
-    { title: 'Delivery Time', content: 'Maximum 1 week or as discussed' },
-    { title: 'Copyright', content: 'Photos are owned by customers' },
+    { title: t('services.info.timeline.title'), content: t('services.info.timeline.content') },
+    { title: t('services.info.payment.title'), content: t('services.info.payment.content') },
+    { title: t('services.info.cancellation.title'), content: t('services.info.cancellation.content') },
+    { title: t('services.info.weather.title'), content: t('services.info.weather.content') },
+    { title: t('services.info.delivery.title'), content: t('services.info.delivery.content') },
+    { title: t('services.info.copyright.title'), content: t('services.info.copyright.content') },
   ];
 
   return (
@@ -69,16 +69,16 @@ export default function ServicesPage() {
       <section className="min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-primary to-primary-light text-tertiary px-4 pt-32 pb-24 text-center">
         <div>
           <div className="text-xs tracking-[0.15em] text-secondary mb-6 font-medium uppercase">
-            Our Services
+            {t('services.hero.label')}
           </div>
 
           <h1 className="font-serif text-5xl md:text-6xl mb-8 leading-tight">
-            Pre-Wedding Photography<br />
-            <span className="text-secondary">Packages</span>
+            {t('services.hero.title')}<br />
+            <span className="text-secondary">{t('services.hero.titleHighlight')}</span>
           </h1>
 
           <p className="text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
-            Choose the perfect package to capture your love story in Chiang Mai
+            {t('services.hero.description')}
           </p>
         </div>
       </section>
@@ -98,7 +98,7 @@ export default function ServicesPage() {
               >
                 {pkg.featured && (
                   <div className="absolute top-4 right-4 bg-secondary text-primary px-4 py-2 rounded-full text-[10px] tracking-wider font-semibold uppercase">
-                    Most Popular
+                    {t('services.packages.mostPopular')}
                   </div>
                 )}
 
@@ -120,7 +120,7 @@ export default function ServicesPage() {
                   }`}
                 />
 
-                <h4 className="font-serif text-lg mb-6">Package Includes:</h4>
+                <h4 className="font-serif text-lg mb-6">{t('services.packages.includes')}</h4>
 
                 <ul className="space-y-3 mb-8">
                   {pkg.features.map((feature, j) => (
@@ -139,7 +139,7 @@ export default function ServicesPage() {
                       : 'bg-primary text-tertiary hover:bg-primary-light'
                   }`}
                 >
-                  Choose This Package
+                  {t('services.packages.choosePackage')}
                 </Link>
               </div>
             ))}
@@ -150,10 +150,10 @@ export default function ServicesPage() {
       {/* Booking Process */}
       <section className="py-24 px-4 bg-tertiary">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="font-serif text-4xl md:text-5xl mb-4">How to Book with Us</h2>
+          <h2 className="font-serif text-4xl md:text-5xl mb-4">{t('services.booking.title')}</h2>
 
           <p className="text-lg leading-relaxed opacity-85 max-w-3xl mx-auto mb-16">
-            Our simple 5-step booking process
+            {t('services.booking.description')}
           </p>
 
           <div className="grid md:grid-cols-5 gap-6">
@@ -174,7 +174,7 @@ export default function ServicesPage() {
       <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-4xl md:text-5xl mb-12 text-center">
-            Important Information
+            {t('services.info.title')}
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -191,15 +191,15 @@ export default function ServicesPage() {
       {/* CTA */}
       <section className="py-20 px-4 bg-gradient-to-br from-accent to-primary text-tertiary text-center">
         <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-5xl mb-6">Ready to Book?</h2>
+          <h2 className="font-serif text-4xl md:text-5xl mb-6">{t('services.cta.title')}</h2>
           <p className="text-xl mb-10 opacity-90 leading-relaxed">
-            Let&apos;s create beautiful memories together in Chiang Mai
+            {t('services.cta.description')}
           </p>
           <Link
             href="/contact"
             className="inline-block px-10 py-4 rounded-full bg-secondary text-primary font-medium tracking-wide shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all"
           >
-            Contact Us Now
+            {t('services.cta.button')}
           </Link>
         </div>
       </section>

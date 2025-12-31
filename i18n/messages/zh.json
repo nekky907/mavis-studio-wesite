@@ -2,7 +2,10 @@
   "common": {
     "bookNow": "立即预订",
     "learnMore": "了解更多",
-    "contactUs": "联系我们"
+    "contactUs": "联系我们",
+    "explorePackages": "探索我们的套餐",
+    "viewPortfolio": "查看作品集",
+    "bookThisPackage": "预订此套餐"
   },
   "nav": {
     "home": "首页",
@@ -12,11 +15,318 @@
     "team": "团队",
     "contact": "联系"
   },
+  "footer": {
+    "location": "泰国清迈 | 创立于2023年",
+    "tagline": "每个瞬间都有一首歌",
+    "copyright": "© {year} Mavis Studio 版权所有"
+  },
   "home": {
     "hero": {
-      "title": "每个瞬间都有一首歌",
-      "subtitle": "鸟儿歌唱不是因为它有答案，而是因为它有歌。",
-      "description": "在泰国清迈的迷人风景中捕捉您的婚纱照瞬间。"
+      "title": "每个瞬间",
+      "titleHighlight": "都有一首歌",
+      "quote": "鸟儿歌唱不是因为它有答案，而是因为它有歌。",
+      "description": "在泰国清迈的迷人风景中捕捉您的婚纱照瞬间。我们创造的回忆如同鸟儿的旋律般美丽动人。"
+    },
+    "about": {
+      "label": "关于 Mavis Studio",
+      "title": "回忆创造者",
+      "titleYear": "始于2023年",
+      "paragraph1": "由 Nonthawat Pinchai 和 Benyapa Varalert 创立，Mavis Studio 为清迈婚纱摄影带来了全新的视角。我们专门为来自中国和新加坡的国际情侣服务，帮助他们在泰国迷人的风景中捕捉爱情故事。",
+      "paragraph2": "就像鸟儿歌唱不是因为有答案而是因为有歌一样，我们创作不仅仅是因为我们能做到，而是因为我们有远见。每个瞬间都装饰着美丽的细节，您旅程中的每一步都经过精心制作。",
+      "stat1Label": "5位专业摄影师",
+      "stat1Value": "MavTeam",
+      "stat2Label": "位于清迈",
+      "stat2Value": "泰国",
+      "stat3Label": "国际客户",
+      "stat3Value": "中国 & 新加坡",
+      "imagePlaceholder": "您美丽的情侣照片将在这里展示"
+    },
+    "services": {
+      "label": "我们的摄影套餐",
+      "title": "创造您完美的回忆",
+      "description": "从亲密的半日拍摄到全面的全日体验，我们提供量身定制的套餐来捕捉您独特的爱情故事。",
+      "halfDay": {
+        "label": "半日体验",
+        "price": "40,000 - 50,000 ฿",
+        "feature1": "4小时摄影师服务",
+        "feature2": "2个拍摄地点",
+        "feature3": "1套礼服和1套西装造型",
+        "feature4": "10-15张精修照片",
+        "feature5": "酒店和交通",
+        "feature6": "专业化妆师"
+      },
+      "fullDay": {
+        "label": "全日体验",
+        "badge": "最受欢迎",
+        "price": "70,000 - 100,000 ฿",
+        "feature1": "8-10小时摄影师服务",
+        "feature2": "2-4个拍摄地点",
+        "feature3": "2-3套礼服和西装更换",
+        "feature4": "15+张精修照片",
+        "feature5": "酒店和交通",
+        "feature6": "专业化妆师",
+        "feature7": "包含晚餐",
+        "feature8": "实体相册和照片打印"
+      }
+    },
+    "values": {
+      "title": "我们的卓越之钥",
+      "description": "三个核心要素指导您与我们同行的每一步",
+      "experience": {
+        "title": "经验",
+        "description": "始终为您的工作感到自豪，并创造积极的能量来激励所有参与者。"
+      },
+      "courtesy": {
+        "title": "礼貌",
+        "description": "良好的礼仪和适当的行为支持旅程中每一步的完成。"
+      },
+      "flexibility": {
+        "title": "灵活性",
+        "description": "理解环境并快速调整技能以实现效率和有效性。"
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "label": "我们的故事",
+      "title": "回忆创造者",
+      "titleHighlight": "始于2023年",
+      "description": "每张照片都讲述一个故事，我们很荣幸能讲述您的故事"
+    },
+    "story": {
+      "title": "我们的起点",
+      "paragraph1": "由 Nonthawat Pinchai 和 Benyapa Varalert 创立，Mavis Studio 为泰国清迈的婚纱摄影带来了全新的视角。我们专门为来自中国和新加坡的国际情侣服务，帮助他们在泰国迷人的风景中捕捉他们的爱情故事。",
+      "paragraph2": "就像鸟儿歌唱不是因为有答案而是因为有歌一样，我们创作不仅仅是因为我们能做到，而是因为我们有远见。每个瞬间都装饰着美丽的细节，您旅程中的每一步都经过精心制作。",
+      "paragraph3": "我们团队拥有5位以上专业摄影师，为每次拍摄带来多元化的视角和专业知识。我们的国际经验使我们能够理解并满足来自不同文化背景的情侣的独特需求。"
+    },
+    "stats": {
+      "photographers": "专业摄影师",
+      "happyCouples": "幸福情侣",
+      "locations": "绝美拍摄地",
+      "countriesServed": "服务国家"
+    },
+    "coreValues": {
+      "title": "我们的核心价值观",
+      "description": "指导我们工作和客户关系的三大支柱"
+    },
+    "values": {
+      "experience": {
+        "title": "经验",
+        "description": "我们为自己的工艺感到自豪，为每次拍摄带来积极的能量，营造一种真实瞬间自然展现的氛围。"
+      },
+      "courtesy": {
+        "title": "礼貌",
+        "description": "专业精神和尊重是我们服务的基础，确保您旅程中的每一步都得到精心照料。"
+      },
+      "flexibility": {
+        "title": "灵活性",
+        "description": "我们适应不断变化的情况和独特的需求，利用我们的技能提供卓越的成果。"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "label": "我们的服务",
+      "title": "婚纱摄影",
+      "titleHighlight": "套餐",
+      "description": "选择完美的套餐，在清迈捕捉您的爱情故事"
+    },
+    "packages": {
+      "mostPopular": "最受欢迎",
+      "includes": "套餐包含：",
+      "choosePackage": "选择此套餐",
+      "halfDay": {
+        "name": "半日体验",
+        "feature1": "4小时摄影师服务",
+        "feature2": "2个拍摄地点",
+        "feature3": "1套礼服和1套西装造型",
+        "feature4": "10-15张特别精修照片",
+        "feature5": "酒店住宿",
+        "feature6": "包含交通",
+        "feature7": "专业化妆师",
+        "feature8": "数字文件交付"
+      },
+      "fullDay": {
+        "name": "全日体验",
+        "feature1": "8-10小时摄影师服务",
+        "feature2": "2-4个拍摄地点",
+        "feature3": "2-3套礼服和西装更换",
+        "feature4": "15+张特别精修照片",
+        "feature5": "酒店住宿",
+        "feature6": "包含交通",
+        "feature7": "专业化妆师",
+        "feature8": "包含晚餐",
+        "feature9": "实体相册和照片打印",
+        "feature10": "数字文件交付"
+      }
+    },
+    "booking": {
+      "title": "如何预订",
+      "description": "我们简单的5步预订流程",
+      "step1": {
+        "title": "咨询",
+        "description": "通过您喜欢的渠道联系我们"
+      },
+      "step2": {
+        "title": "沟通",
+        "description": "讨论您的想法和偏好"
+      },
+      "step3": {
+        "title": "预订",
+        "description": "确认您的套餐和日期"
+      },
+      "step4": {
+        "title": "拍摄",
+        "description": "体验您梦想中的拍摄"
+      },
+      "step5": {
+        "title": "交付",
+        "description": "1周内收到您的照片"
+      }
+    },
+    "info": {
+      "title": "重要信息",
+      "timeline": {
+        "title": "预订时间",
+        "content": "建议提前1-12个月预订"
+      },
+      "payment": {
+        "title": "付款方式",
+        "content": "预订时支付50%定金，完成后支付剩余50%"
+      },
+      "cancellation": {
+        "title": "取消政策",
+        "content": "取消后定金不予退还"
+      },
+      "weather": {
+        "title": "天气政策",
+        "content": "我们将继续拍摄或寻找室内场地"
+      },
+      "delivery": {
+        "title": "交付时间",
+        "content": "最长1周或按商定时间"
+      },
+      "copyright": {
+        "title": "版权",
+        "content": "照片版权归客户所有"
+      }
+    },
+    "cta": {
+      "title": "准备好预订了吗？",
+      "description": "让我们在清迈一起创造美丽的回忆",
+      "button": "立即联系我们"
+    }
+  },
+  "portfolio": {
+    "hero": {
+      "label": "我们的作品",
+      "title": "作品集",
+      "titleHighlight": "我们捕捉的爱情故事",
+      "description": "每张照片都是对每对情侣独特美丽旅程的见证"
+    },
+    "loading": "加载中...",
+    "empty": {
+      "title": "作品集即将推出",
+      "description": "我们正在精心策划最佳作品在这里展示。"
+    }
+  },
+  "team": {
+    "hero": {
+      "label": "认识团队",
+      "title": "背后的面孔",
+      "titleHighlight": "您的回忆",
+      "description": "我们充满热情的摄影师团队致力于捕捉您的特别时刻"
+    },
+    "members": {
+      "nonthawat": {
+        "role": "联合创始人 & 首席摄影师",
+        "bio": "热衷于捕捉真实的瞬间和美丽的风景。"
+      },
+      "benyapa": {
+        "role": "联合创始人 & 创意总监",
+        "bio": "专注于创意指导和造型设计，打造难忘的拍摄体验。"
+      }
+    },
+    "join": {
+      "title": "加入我们的团队",
+      "description": "我们一直在寻找有才华的摄影师加入Mavis Studio大家庭",
+      "button": "联系我们"
+    }
+  },
+  "contact": {
+    "hero": {
+      "label": "联系我们",
+      "title": "让我们创造",
+      "titleHighlight": "美丽的回忆",
+      "description": "我们很高兴收到您的来信，讨论您的婚纱摄影"
+    },
+    "form": {
+      "title": "给我们留言",
+      "description": "填写表格，我们将在24小时内回复您",
+      "successMessage": "谢谢！您的预订请求已成功提交。我们会尽快联系您。",
+      "errorAlert": "提交预订失败，请重试。",
+      "name": {
+        "label": "您的姓名",
+        "placeholder": "请输入您的姓名"
+      },
+      "email": {
+        "label": "电子邮箱",
+        "placeholder": "your@email.com"
+      },
+      "phone": {
+        "label": "电话号码",
+        "placeholder": "+66 XX XXX XXXX"
+      },
+      "date": {
+        "label": "首选日期"
+      },
+      "package": {
+        "label": "感兴趣的套餐",
+        "halfDay": "半日套餐",
+        "fullDay": "全日套餐",
+        "custom": "定制套餐"
+      },
+      "currency": {
+        "label": "货币偏好",
+        "thb": "泰铢 (฿)",
+        "cny": "人民币 (¥)",
+        "sgd": "新加坡元 (S$)"
+      },
+      "message": {
+        "label": "您的留言",
+        "placeholder": "告诉我们您的想法..."
+      },
+      "submit": "发送消息",
+      "sending": "发送中..."
+    },
+    "contactInfo": {
+      "title": "联系信息",
+      "description": "我们随时为您解答任何问题"
+    },
+    "info": {
+      "location": {
+        "title": "地点",
+        "value": "泰国清迈"
+      },
+      "email": {
+        "title": "电子邮箱",
+        "value": "即将公布"
+      },
+      "phone": {
+        "title": "电话",
+        "value": "即将公布"
+      },
+      "hours": {
+        "title": "营业时间",
+        "value": "待公布"
+      }
+    },
+    "social": {
+      "title": "关注我们",
+      "description": "在社交媒体上与我们保持联系"
+    },
+    "map": {
+      "placeholder": "清迈地图将在此显示"
     }
   }
 }

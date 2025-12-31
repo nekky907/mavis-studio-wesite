@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import { Poppins, Cinzel } from 'next/font/google';
+import { cookies } from 'next/headers';
+import { Providers } from './providers';
+import { defaultLocale, type Locale } from '@/i18n/config';
 import './globals.css';
 
 const poppins = Poppins({
@@ -22,15 +25,23 @@ export const metadata: Metadata = {
   keywords: ['pre-wedding photography', 'Chiang Mai', 'Thailand', 'wedding photography', 'couple photography'],
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const locale = (cookieStore.get('NEXT_LOCALE')?.value as Locale) || defaultLocale;
+
+  // Load messages for the current locale
+  const messages = (await import(`@/i18n/messages/${locale}.json`)).default;
+
   return (
-    <html lang="en" className={`${poppins.variable} ${cinzel.variable}`}>
+    <html lang={locale} className={`${poppins.variable} ${cinzel.variable}`}>
       <body className="font-sans antialiased">
-        {children}
+        <Providers locale={locale} messages={messages}>
+          {children}
+        </Providers>
       </body>
     </html>
   );
