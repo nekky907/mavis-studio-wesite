@@ -14,7 +14,8 @@
       "Bash(npm run build:*)",
       "Bash(curl:*)",
       "Bash(find:*)",
-      "Bash(dir:*)"
+      "Bash(dir:*)",
+      "Bash(findstr:*)"
     ]
   }
 }
