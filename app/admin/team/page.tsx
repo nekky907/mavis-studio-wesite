@@ -10,6 +10,8 @@ export const metadata = {
   description: 'Manage team members',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function ManageTeamPage() {
   const supabase = await createClient();
 

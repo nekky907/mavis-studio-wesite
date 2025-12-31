@@ -10,6 +10,8 @@ export const metadata = {
   description: 'Manage portfolio items',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default async function ManagePortfolioPage() {
   const supabase = await createClient();
 
