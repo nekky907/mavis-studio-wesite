@@ -1,0 +1,22 @@
+{
+  "common": {
+    "bookNow": "立即预订",
+    "learnMore": "了解更多",
+    "contactUs": "联系我们"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "services": "服务",
+    "portfolio": "作品集",
+    "team": "团队",
+    "contact": "联系"
+  },
+  "home": {
+    "hero": {
+      "title": "每个瞬间都有一首歌",
+      "subtitle": "鸟儿歌唱不是因为它有答案，而是因为它有歌。",
+      "description": "在泰国清迈的迷人风景中捕捉您的婚纱照瞬间。"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "common": {
+    "bookNow": "Book Now",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "team": "Team",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Where Every Moment Has a Song",
+      "subtitle": "A bird doesn't sing because it has an answer. It sings because it has a song.",
+      "description": "Capturing your pre-wedding moments in the enchanting landscapes of Chiang Mai, Thailand."
+    }
+  }
+}
