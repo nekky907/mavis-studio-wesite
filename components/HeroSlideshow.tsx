@@ -84,17 +84,17 @@ export function HeroSlideshow() {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
+        className="absolute left-2 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
         aria-label="Previous slide"
       >
-        <ChevronLeft size={24} />
+        <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
+        className="absolute right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center text-white hover:bg-white/20 transition-all"
         aria-label="Next slide"
       >
-        <ChevronRight size={24} />
+        <ChevronRight size={20} className="sm:w-6 sm:h-6" />
       </button>
 
       {/* Slide Indicators */}
@@ -115,41 +115,41 @@ export function HeroSlideshow() {
       </div>
 
       {/* Overlapping Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-4 text-center text-white">
-        <div className="text-4xl text-secondary mb-8 opacity-80 animate-fade-in drop-shadow-lg">✦</div>
+      <div className="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 text-center text-white pt-20 sm:pt-24">
+        <div className="text-2xl sm:text-4xl text-secondary mb-4 sm:mb-8 opacity-80 animate-fade-in drop-shadow-lg">✦</div>
 
-        <h1 className="font-serif text-5xl md:text-7xl mb-8 leading-tight animate-slide-up drop-shadow-2xl">
+        <h1 className="font-serif text-3xl sm:text-5xl md:text-7xl mb-4 sm:mb-8 leading-tight animate-slide-up drop-shadow-2xl">
           {t('home.hero.title')}<br />
           <span className="text-secondary">{t('home.hero.titleHighlight')}</span>
         </h1>
 
-        <div className="max-w-2xl mx-auto mb-12 text-lg leading-relaxed italic animate-slide-up backdrop-blur-sm bg-black/20 py-6 px-8 rounded-2xl border border-white/10" style={{ animationDelay: '0.2s' }}>
-          <span className="text-secondary text-2xl mx-4">❝</span>
+        <div className="max-w-2xl mx-auto mb-6 sm:mb-12 text-sm sm:text-lg leading-relaxed italic animate-slide-up backdrop-blur-sm bg-black/20 py-4 px-4 sm:py-6 sm:px-8 rounded-2xl border border-white/10" style={{ animationDelay: '0.2s' }}>
+          <span className="text-secondary text-lg sm:text-2xl mr-2 sm:mx-4">❝</span>
           {t('home.hero.quote')}
-          <span className="text-secondary text-2xl mx-4">❞</span>
+          <span className="text-secondary text-lg sm:text-2xl ml-2 sm:mx-4">❞</span>
         </div>
 
-        <p className="text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-12 drop-shadow-lg animate-slide-up" style={{ animationDelay: '0.4s' }}>
+        <p className="text-sm sm:text-base md:text-lg leading-relaxed max-w-2xl mx-auto mb-8 sm:mb-12 drop-shadow-lg animate-slide-up" style={{ animationDelay: '0.4s' }}>
           {t('home.hero.description')}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
           <Link
             href="/services"
-            className="px-8 py-4 rounded-full bg-white text-primary font-medium text-base tracking-wide shadow-2xl hover:bg-secondary hover:text-white hover:shadow-3xl hover:-translate-y-1 transition-all"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full bg-white text-primary font-medium text-sm sm:text-base tracking-wide shadow-2xl hover:bg-secondary hover:text-white hover:shadow-3xl hover:-translate-y-1 transition-all"
           >
             {t('common.explorePackages')}
           </Link>
           <Link
             href="/portfolio"
-            className="px-8 py-4 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm text-white font-medium text-base tracking-wide hover:bg-white hover:text-primary hover:-translate-y-1 transition-all"
+            className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white bg-white/10 backdrop-blur-sm text-white font-medium text-sm sm:text-base tracking-wide hover:bg-white hover:text-primary hover:-translate-y-1 transition-all"
           >
             {t('common.viewPortfolio')}
           </Link>
         </div>
 
-        <div className="mt-20 animate-fade-in" style={{ animationDelay: '0.8s' }}>
-          <ChevronDown className="mx-auto text-white animate-float drop-shadow-lg" size={32} />
+        <div className="mt-12 sm:mt-20 animate-fade-in" style={{ animationDelay: '0.8s' }}>
+          <ChevronDown className="mx-auto text-white animate-float drop-shadow-lg" size={28} />
         </div>
       </div>
     </section>

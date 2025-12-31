@@ -45,7 +45,7 @@ export function Navigation() {
   return (
     <nav
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-6',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3 md:py-4',
         scrolled
           ? 'bg-primary/95 backdrop-blur-lg border-b border-secondary/20'
           : 'bg-transparent'
@@ -55,13 +55,13 @@ export function Navigation() {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
-            <div className={cn('relative h-24 transition-all', useLightColors ? 'brightness-0 invert' : '')}>
+            <div className={cn('relative h-12 sm:h-16 md:h-20 transition-all', useLightColors ? 'brightness-0 invert' : '')}>
               <Image
                 src="/mavis-logo.svg"
                 alt="Mavis Studio"
-                width={140}
-                height={168}
-                className="object-contain"
+                width={100}
+                height={120}
+                className="h-full w-auto object-contain"
                 priority
               />
             </div>

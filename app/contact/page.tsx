@@ -61,105 +61,105 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero */}
-      <section className="min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-primary to-primary-light text-tertiary px-4 pt-32 pb-24 text-center">
+      <section className="min-h-[40vh] sm:min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-primary to-primary-light text-tertiary px-4 pt-24 sm:pt-32 pb-12 sm:pb-24 text-center">
         <div>
-          <div className="text-xs tracking-[0.15em] text-secondary mb-6 font-medium uppercase">
+          <div className="text-xs tracking-[0.15em] text-secondary mb-4 sm:mb-6 font-medium uppercase">
             {t('contact.hero.label')}
           </div>
 
-          <h1 className="font-serif text-5xl md:text-6xl mb-8 leading-tight">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl mb-4 sm:mb-8 leading-tight">
             {t('contact.hero.title')}<br />
             <span className="text-secondary">{t('contact.hero.titleHighlight')}</span>
           </h1>
 
-          <p className="text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
+          <p className="text-base sm:text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
             {t('contact.hero.description')}
           </p>
         </div>
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-24 px-4 bg-white">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+      <section className="py-12 sm:py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
           {/* Contact Form */}
           <div>
-            <h2 className="font-serif text-3xl md:text-4xl mb-4">{t('contact.form.title')}</h2>
-            <p className="text-base opacity-80 mb-8">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">{t('contact.form.title')}</h2>
+            <p className="text-sm sm:text-base opacity-80 mb-6 sm:mb-8">
               {t('contact.form.description')}
             </p>
 
             {submitSuccess && (
-              <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
+              <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm sm:text-base">
                 {t('contact.form.successMessage')}
               </div>
             )}
 
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.name.label')} *</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.name.label')} *</label>
                 <input
                   {...register('name')}
                   type="text"
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors text-sm sm:text-base"
                   placeholder={t('contact.form.name.placeholder')}
                 />
                 {errors.name && (
-                  <p className="mt-1 text-sm text-red-600">{errors.name.message}</p>
+                  <p className="mt-1 text-xs sm:text-sm text-red-600">{errors.name.message}</p>
                 )}
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.email.label')} *</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.email.label')} *</label>
                 <input
                   {...register('email')}
                   type="email"
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors text-sm sm:text-base"
                   placeholder={t('contact.form.email.placeholder')}
                 />
                 {errors.email && (
-                  <p className="mt-1 text-sm text-red-600">{errors.email.message}</p>
+                  <p className="mt-1 text-xs sm:text-sm text-red-600">{errors.email.message}</p>
                 )}
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.phone.label')}</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.phone.label')}</label>
                 <input
                   {...register('phone')}
                   type="tel"
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors text-sm sm:text-base"
                   placeholder={t('contact.form.phone.placeholder')}
                 />
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.date.label')}</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.date.label')}</label>
                 <input
                   {...register('preferred_date')}
                   type="date"
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors text-sm sm:text-base"
                 />
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.package.label')} *</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.package.label')} *</label>
                 <select
                   {...register('package_type')}
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors bg-white"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors bg-white text-sm sm:text-base"
                 >
                   <option value="half_day">{t('contact.form.package.halfDay')}</option>
                   <option value="full_day">{t('contact.form.package.fullDay')}</option>
                   <option value="custom">{t('contact.form.package.custom')}</option>
                 </select>
                 {errors.package_type && (
-                  <p className="mt-1 text-sm text-red-600">{errors.package_type.message}</p>
+                  <p className="mt-1 text-xs sm:text-sm text-red-600">{errors.package_type.message}</p>
                 )}
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.currency.label')}</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.currency.label')}</label>
                 <select
                   {...register('currency')}
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors bg-white"
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors bg-white text-sm sm:text-base"
                 >
                   <option value="THB">{t('contact.form.currency.thb')}</option>
                   <option value="CNY">{t('contact.form.currency.cny')}</option>
@@ -168,11 +168,11 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block mb-2 text-sm font-medium">{t('contact.form.message.label')}</label>
+                <label className="block mb-1.5 sm:mb-2 text-xs sm:text-sm font-medium">{t('contact.form.message.label')}</label>
                 <textarea
                   {...register('message')}
-                  rows={5}
-                  className="w-full px-4 py-3 border-2 border-tertiary rounded-xl focus:border-secondary outline-none transition-colors resize-y"
+                  rows={4}
+                  className="w-full px-3 sm:px-4 py-2.5 sm:py-3 border-2 border-tertiary rounded-lg sm:rounded-xl focus:border-secondary outline-none transition-colors resize-y text-sm sm:text-base"
                   placeholder={t('contact.form.message.placeholder')}
                 />
               </div>
@@ -180,7 +180,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 rounded-full bg-gradient-to-r from-primary to-primary-light text-tertiary font-medium tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 sm:py-4 rounded-full bg-gradient-to-r from-primary to-primary-light text-tertiary font-medium text-sm sm:text-base tracking-wide shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
               </button>
@@ -189,42 +189,42 @@ export default function ContactPage() {
 
           {/* Contact Info */}
           <div>
-            <h2 className="font-serif text-3xl md:text-4xl mb-4">{t('contact.contactInfo.title')}</h2>
-            <p className="text-base opacity-80 mb-8">
+            <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4">{t('contact.contactInfo.title')}</h2>
+            <p className="text-sm sm:text-base opacity-80 mb-6 sm:mb-8">
               {t('contact.contactInfo.description')}
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {contactInfo.map((item, i) => (
-                <div key={i} className="p-6 bg-tertiary rounded-2xl border-l-4 border-secondary flex gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center flex-shrink-0">
-                    <item.icon className="text-white" size={20} />
+                <div key={i} className="p-4 sm:p-6 bg-tertiary rounded-xl sm:rounded-2xl border-l-4 border-secondary flex gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center flex-shrink-0">
+                    <item.icon className="text-white" size={18} />
                   </div>
                   <div>
-                    <h4 className="font-serif text-lg mb-1">{item.title}</h4>
-                    <p className="text-sm opacity-80">{item.info}</p>
+                    <h4 className="font-serif text-base sm:text-lg mb-0.5 sm:mb-1">{item.title}</h4>
+                    <p className="text-xs sm:text-sm opacity-80">{item.info}</p>
                   </div>
                 </div>
               ))}
             </div>
 
             {/* Social Media */}
-            <div className="mt-10 p-8 bg-gradient-to-br from-accent to-primary rounded-2xl text-tertiary text-center">
-              <h4 className="font-serif text-2xl mb-4">{t('contact.social.title')}</h4>
-              <p className="text-sm opacity-90 mb-6">
+            <div className="mt-8 sm:mt-10 p-6 sm:p-8 bg-gradient-to-br from-accent to-primary rounded-xl sm:rounded-2xl text-tertiary text-center">
+              <h4 className="font-serif text-xl sm:text-2xl mb-3 sm:mb-4">{t('contact.social.title')}</h4>
+              <p className="text-xs sm:text-sm opacity-90 mb-4 sm:mb-6">
                 {t('contact.social.description')}
               </p>
-              <div className="flex gap-4 justify-center">
+              <div className="flex gap-3 sm:gap-4 justify-center">
                 {[
                   { icon: Instagram, label: 'Instagram' },
                   { icon: Facebook, label: 'Facebook' },
                 ].map((platform, i) => (
                   <button
                     key={i}
-                    className="w-12 h-12 rounded-full bg-tertiary/20 hover:bg-secondary flex items-center justify-center transition-all hover:-translate-y-1"
+                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-tertiary/20 hover:bg-secondary flex items-center justify-center transition-all hover:-translate-y-1"
                     aria-label={platform.label}
                   >
-                    <platform.icon size={20} />
+                    <platform.icon size={18} />
                   </button>
                 ))}
               </div>
@@ -234,7 +234,7 @@ export default function ContactPage() {
       </section>
 
       {/* Map Placeholder */}
-      <section className="h-96 bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-primary text-xl italic">
+      <section className="h-48 sm:h-64 md:h-96 bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-primary text-base sm:text-lg md:text-xl italic px-4 text-center">
         &quot;{t('contact.map.placeholder')}&quot;
       </section>
 
