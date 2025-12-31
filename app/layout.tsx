@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   title: 'Mavis Studio - Pre-Wedding Photography Chiang Mai',
   description: 'Capturing your pre-wedding moments in the enchanting landscapes of Chiang Mai, Thailand. Professional photography services for international couples.',
   keywords: ['pre-wedding photography', 'Chiang Mai', 'Thailand', 'wedding photography', 'couple photography'],
+  icons: {
+    icon: '/mavis-logo.svg',
+    apple: '/mavis-logo.svg',
+  },
 };
 
 export default async function RootLayout({
