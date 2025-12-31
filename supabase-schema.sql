@@ -59,7 +59,7 @@ ALTER TABLE team_members ENABLE ROW LEVEL SECURITY;
 CREATE POLICY "Public can view portfolio items" ON portfolio_items
   FOR SELECT USING (true);
 
-CREATE POLICY "Public can view team members" ON team_items
+CREATE POLICY "Public can view team members" ON team_members
   FOR SELECT USING (true);
 
 -- Public can insert bookings
