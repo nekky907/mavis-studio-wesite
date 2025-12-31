@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowLeft, Mail, Phone, Calendar, Package } from 'lucide-react';
 import { Booking } from '@/types';
 
@@ -33,6 +34,13 @@ export default async function ManageBookingsPage() {
       {/* Header */}
       <nav className="bg-primary text-tertiary py-4 px-6 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center gap-4">
+          <Image
+            src="/mavis-logo.svg"
+            alt="Mavis Studio"
+            width={32}
+            height={38}
+            className="brightness-0 invert"
+          />
           <Link
             href="/admin/dashboard"
             className="flex items-center gap-2 hover:text-secondary transition-colors"

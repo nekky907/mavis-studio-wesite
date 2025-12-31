@@ -1,0 +1,10 @@
+LOGO FILE INSTRUCTIONS
+======================
+
+Please save the Mavis Studio logo image as:
+- Filename: mavis-logo.svg (or mavis-logo.png if SVG is not available)
+- Location: public/mavis-logo.svg
+
+The logo should be the ornate "M" design with "MAVIS STUDIO" text below it.
+
+The Navigation component has been updated to use this logo file.

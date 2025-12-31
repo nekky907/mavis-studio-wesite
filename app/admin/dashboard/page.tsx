@@ -1,6 +1,7 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Calendar, Image as ImageIcon, Users, LogOut, Mail } from 'lucide-react';
 import { Booking } from '@/types';
 
@@ -44,9 +45,18 @@ export default async function AdminDashboardPage() {
     <div className="min-h-screen bg-tertiary">
       {/* Header */}
       <nav className="bg-primary text-tertiary py-4 px-6 flex justify-between items-center shadow-lg">
-        <div>
-          <h1 className="font-serif text-2xl">Mavis Studio Admin</h1>
-          <p className="text-xs text-secondary">Welcome, {user.email}</p>
+        <div className="flex items-center gap-4">
+          <Image
+            src="/mavis-logo.svg"
+            alt="Mavis Studio"
+            width={40}
+            height={48}
+            className="brightness-0 invert"
+          />
+          <div>
+            <h1 className="font-serif text-2xl">Mavis Studio Admin</h1>
+            <p className="text-xs text-secondary">Welcome, {user.email}</p>
+          </div>
         </div>
         <form action="/api/auth/signout" method="post">
           <button

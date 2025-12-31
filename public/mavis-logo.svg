@@ -1,0 +1,42 @@
+<svg width="200" height="280" viewBox="0 0 200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer oval frame -->
+  <ellipse cx="100" cy="85" rx="75" ry="95" stroke="currentColor" stroke-width="3" fill="none"/>
+  <ellipse cx="100" cy="85" rx="68" ry="88" stroke="currentColor" stroke-width="2" fill="none"/>
+
+  <!-- Ornate geometric pattern -->
+  <!-- Top diamond -->
+  <path d="M100 15 L105 20 L100 25 L95 20 Z" fill="currentColor"/>
+
+  <!-- Main decorative frame - stepped pattern -->
+  <path d="M60 50 L55 55 L55 70 L50 75 L50 95 L55 100 L55 115 L60 120 L75 120 L80 115 L80 100 L85 95 L85 75 L80 70 L80 55 L75 50 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path d="M140 50 L145 55 L145 70 L150 75 L150 95 L145 100 L145 115 L140 120 L125 120 L120 115 L120 100 L115 95 L115 75 L120 70 L120 55 L125 50 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+
+  <!-- Inner diamond pattern -->
+  <path d="M70 60 L65 65 L65 80 L62 83 L62 87 L65 90 L65 105 L70 110 L85 110 L90 105 L90 90 L93 87 L93 83 L90 80 L90 65 L85 60 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path d="M130 60 L135 65 L135 80 L138 83 L138 87 L135 90 L135 105 L130 110 L115 110 L110 105 L110 90 L107 87 L107 83 L110 80 L110 65 L115 60 Z" stroke="currentColor" stroke-width="2" fill="none"/>
+
+  <!-- Diagonal decorative lines -->
+  <path d="M75 70 L100 85 L125 70" stroke="currentColor" stroke-width="2" fill="none"/>
+  <path d="M75 100 L100 85 L125 100" stroke="currentColor" stroke-width="2" fill="none"/>
+
+  <!-- Small diamond accents -->
+  <circle cx="68" cy="85" r="3" fill="currentColor"/>
+  <circle cx="132" cy="85" r="3" fill="currentColor"/>
+  <circle cx="100" cy="60" r="3" fill="currentColor"/>
+
+  <!-- Side diamonds -->
+  <path d="M40 85 L45 90 L40 95 L35 90 Z" fill="currentColor"/>
+  <path d="M160 85 L165 90 L160 95 L155 90 Z" fill="currentColor"/>
+
+  <!-- Central M -->
+  <text x="100" y="95" font-family="serif" font-size="48" font-weight="500" text-anchor="middle" fill="currentColor">M</text>
+
+  <!-- Bottom diamond -->
+  <path d="M100 155 L105 160 L100 165 L95 160 Z" fill="currentColor"/>
+
+  <!-- MAVIS text -->
+  <text x="100" y="225" font-family="serif" font-size="48" font-weight="700" text-anchor="middle" letter-spacing="8" fill="currentColor">MAVIS</text>
+
+  <!-- STUDIO text -->
+  <text x="100" y="255" font-family="sans-serif" font-size="24" font-weight="400" text-anchor="middle" letter-spacing="4" fill="currentColor">STUDIO</text>
+</svg>

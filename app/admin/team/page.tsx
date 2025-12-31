@@ -1,8 +1,8 @@
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import Link from 'next/link';
-import { ArrowLeft, Users, Camera } from 'lucide-react';
 import Image from 'next/image';
+import { ArrowLeft, Users, Camera } from 'lucide-react';
 import { TeamMember } from '@/types';
 
 export const metadata = {
@@ -34,6 +34,13 @@ export default async function ManageTeamPage() {
       {/* Header */}
       <nav className="bg-primary text-tertiary py-4 px-6 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center gap-4">
+          <Image
+            src="/mavis-logo.svg"
+            alt="Mavis Studio"
+            width={32}
+            height={38}
+            className="brightness-0 invert"
+          />
           <Link
             href="/admin/dashboard"
             className="flex items-center gap-2 hover:text-secondary transition-colors"

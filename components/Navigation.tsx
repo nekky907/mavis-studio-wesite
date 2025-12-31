@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
@@ -50,36 +51,16 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div
-              className={cn(
-                'w-12 h-12 rounded-full flex items-center justify-center',
-                'border-2 border-secondary/30 backdrop-blur-lg transition-all',
-                'font-serif text-xl font-semibold',
-                useLightColors
-                  ? 'bg-tertiary/10 text-tertiary'
-                  : 'bg-primary/80 text-secondary'
-              )}
-            >
-              M
-            </div>
-            <div className="flex flex-col">
-              <span
-                className={cn(
-                  'font-serif text-xl font-semibold tracking-wider transition-colors',
-                  useLightColors ? 'text-tertiary' : 'text-primary'
-                )}
-              >
-                MAVIS
-              </span>
-              <span
-                className={cn(
-                  'text-[10px] tracking-[0.2em] transition-colors',
-                  useLightColors ? 'text-secondary' : 'text-accent'
-                )}
-              >
-                STUDIO
-              </span>
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className={cn('relative h-12 transition-all', useLightColors ? 'brightness-0 invert' : '')}>
+              <Image
+                src="/mavis-logo.svg"
+                alt="Mavis Studio"
+                width={40}
+                height={48}
+                className="object-contain"
+                priority
+              />
             </div>
           </Link>
 

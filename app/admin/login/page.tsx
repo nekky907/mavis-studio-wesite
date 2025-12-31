@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
 import { supabase } from '@/lib/supabase/client';
 import { Lock } from 'lucide-react';
 
@@ -38,8 +39,14 @@ export default function AdminLoginPage() {
     <div className="min-h-screen bg-gradient-to-br from-primary to-primary-light flex items-center justify-center px-4">
       <div className="max-w-md w-full bg-white rounded-3xl shadow-2xl p-10">
         <div className="text-center mb-8">
-          <div className="w-20 h-20 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center mx-auto mb-6">
-            <Lock className="text-white" size={32} />
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/mavis-logo.svg"
+              alt="Mavis Studio"
+              width={60}
+              height={72}
+              className="object-contain"
+            />
           </div>
           <h1 className="font-serif text-3xl text-primary mb-2">Admin Login</h1>
           <p className="text-sm text-primary/70">Mavis Studio Dashboard</p>
