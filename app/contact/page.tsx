@@ -13,6 +13,7 @@ export default function ContactPage() {
   const t = useTranslations();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -29,6 +30,9 @@ export default function ContactPage() {
 
   const onSubmit = async (data: BookingInput) => {
     setIsSubmitting(true);
+    setSubmitError(null);
+    setSubmitSuccess(false);
+
     try {
       const response = await fetch('/api/bookings', {
         method: 'POST',
@@ -36,14 +40,18 @@ export default function ContactPage() {
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) throw new Error('Failed to submit booking');
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to submit booking');
+      }
 
       setSubmitSuccess(true);
       reset();
       setTimeout(() => setSubmitSuccess(false), 5000);
     } catch (error) {
       console.error('Booking submission error:', error);
-      alert(t('contact.form.errorAlert'));
+      setSubmitError(error instanceof Error ? error.message : t('contact.form.errorAlert'));
     } finally {
       setIsSubmitting(false);
     }
@@ -91,6 +99,12 @@ export default function ContactPage() {
             {submitSuccess && (
               <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm sm:text-base">
                 {t('contact.form.successMessage')}
+              </div>
+            )}
+
+            {submitError && (
+              <div className="mb-4 sm:mb-6 p-3 sm:p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm sm:text-base">
+                {submitError}
               </div>
             )}
 
