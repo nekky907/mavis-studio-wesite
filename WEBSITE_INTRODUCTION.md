@@ -412,10 +412,13 @@ Required environment variables:
 ```
 NEXT_PUBLIC_SUPABASE_URL=<Supabase project URL>
 NEXT_PUBLIC_SUPABASE_ANON_KEY=<Supabase anonymous key>
+SUPABASE_SERVICE_ROLE_KEY=<Supabase service role key (optional, for bypassing RLS on public bookings)>
 RESEND_API_KEY=<Resend API key>
 RESEND_FROM_EMAIL=<Sender email address>
 ADMIN_EMAIL=<Admin notification email>
 ```
+
+Note: The `SUPABASE_SERVICE_ROLE_KEY` is optional but recommended for production. If not provided, the API will fall back to using the anon key, which requires proper RLS policies to be configured.
 
 ## Build & Deployment
 

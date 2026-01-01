@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
+import { createClient as createServiceClient } from '@supabase/supabase-js';
 import { bookingSchema } from '@/lib/validations';
 import { Resend } from 'resend';
 
@@ -12,8 +13,18 @@ export async function POST(request: NextRequest) {
     // Validate input
     const validatedData = bookingSchema.parse(body);
 
-    // Create Supabase client
-    const supabase = await createClient();
+    // Create Supabase client with service role for public insertions
+    // This bypasses RLS policies for booking creation
+    const supabase = createServiceClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+      {
+        auth: {
+          autoRefreshToken: false,
+          persistSession: false
+        }
+      }
+    );
 
     // Insert booking into database
     const { data: booking, error } = await (supabase as any)
