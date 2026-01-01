@@ -34,28 +34,21 @@ export default function ContactPage() {
     setSubmitSuccess(false);
 
     try {
-      console.log('Submitting booking:', data);
-
       const response = await fetch('/api/bookings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
       });
 
-      console.log('Response status:', response.status);
-
       let result;
       try {
         result = await response.json();
-        console.log('Response data:', result);
       } catch (jsonError) {
-        console.error('Failed to parse JSON response:', jsonError);
         throw new Error('Server returned invalid response');
       }
 
       if (!response.ok) {
         const errorMessage = result.error || result.message || `Server error: ${response.status}`;
-        console.error('API error:', errorMessage, result);
         throw new Error(errorMessage);
       }
 
@@ -63,16 +56,8 @@ export default function ContactPage() {
       reset();
       setTimeout(() => setSubmitSuccess(false), 5000);
     } catch (error) {
-      console.error('Booking submission error:', error);
       const errorMessage = error instanceof Error ? error.message : t('contact.form.errorAlert');
       setSubmitError(errorMessage);
-
-      // Also log to console for debugging
-      console.error('Error details:', {
-        error,
-        message: errorMessage,
-        formData: data
-      });
     } finally {
       setIsSubmitting(false);
     }
