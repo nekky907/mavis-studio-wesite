@@ -30,7 +30,11 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('Supabase error:', error);
       return NextResponse.json(
-        { error: 'Failed to create booking' },
+        {
+          error: 'Failed to create booking',
+          message: error.message || 'Database error',
+          details: error
+        },
         { status: 500 }
       );
     }
