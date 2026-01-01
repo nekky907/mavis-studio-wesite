@@ -467,6 +467,48 @@ Mobile-specific features:
 
 ## SEO Optimization
 
+### Metadata (app/layout.tsx)
+Comprehensive metadata configuration including:
+- **Title Template**: Dynamic titles with "| Mavis Studio" suffix
+- **Meta Description**: SEO-optimized description with keywords
+- **Keywords**: Targeted SEO keywords for pre-wedding photography in Chiang Mai
+- **Authors & Publisher**: Business ownership information
+- **Open Graph Tags**: Social media preview optimization
+  - Type, locale, alternate locales
+  - Site name, title, description
+  - Images for social sharing
+- **Twitter Card**: Large image card for Twitter sharing
+- **Robots Configuration**:
+  - Index and follow enabled
+  - Google Bot specific settings
+  - Max image/video preview settings
+- **Verification Codes**: Placeholder for Google/Yandex verification
+
+### Structured Data (components/StructuredData.tsx)
+JSON-LD schema markup for rich search results:
+
+1. **Organization Schema**:
+   - Professional service business type
+   - Founders information
+   - Service types and offerings
+   - Contact information
+   - Social media profiles
+
+2. **Local Business Schema**:
+   - Geographic coordinates (Chiang Mai)
+   - Address information
+   - Opening hours
+   - Price range indicator
+
+3. **Website Schema**:
+   - Multi-language support (en, th, zh)
+   - Publisher relationship
+   - Site description
+
+4. **Breadcrumb Schema**:
+   - Navigation structure
+   - All main pages indexed
+
 ### Sitemap (app/sitemap.ts)
 - Automatically generated XML sitemap at `/sitemap.xml`
 - Includes all public pages (home, about, services, portfolio, team, contact)
@@ -482,13 +524,34 @@ Mobile-specific features:
 - Blocks admin and API routes from indexing
 - References sitemap location
 
-### Metadata
-Each page should include proper meta tags for:
-- Title tags (unique per page and language)
-- Meta descriptions
-- Open Graph tags for social sharing
-- Canonical URLs
-- Language alternates (hreflang tags)
+### Performance Optimization (next.config.ts)
+Enhanced configuration for better performance and SEO:
+- **Image Optimization**:
+  - AVIF and WebP format support
+  - Responsive device sizes
+  - Optimized image sizing
+- **Compression**: Gzip compression enabled
+- **Security Headers**:
+  - X-DNS-Prefetch-Control
+  - X-Frame-Options (clickjacking protection)
+  - X-Content-Type-Options
+  - Referrer-Policy
+- **Powered-By Header**: Removed for security
+- **ETags**: Enabled for browser caching
+
+### SEO Best Practices Implemented
+1. ✅ Semantic HTML structure
+2. ✅ Mobile-first responsive design
+3. ✅ Fast page load times
+4. ✅ Optimized images with lazy loading
+5. ✅ Multi-language support with hreflang
+6. ✅ Structured data for rich snippets
+7. ✅ Social media optimization (OG tags)
+8. ✅ XML sitemap
+9. ✅ Robots.txt configuration
+10. ✅ Security headers
+11. ✅ Canonical URLs
+12. ✅ Descriptive alt tags for images
 
 ## Git Repository
 
