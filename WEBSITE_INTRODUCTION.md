@@ -465,6 +465,31 @@ Mobile-specific features:
 - Adjusted font sizes and spacing
 - Touch-friendly button sizes
 
+## SEO Optimization
+
+### Sitemap (app/sitemap.ts)
+- Automatically generated XML sitemap at `/sitemap.xml`
+- Includes all public pages (home, about, services, portfolio, team, contact)
+- Multi-language support with alternate language tags
+- Dynamic lastModified dates
+- Priority and changeFrequency settings:
+  - Homepage: priority 1.0, weekly updates
+  - Other pages: priority 0.8, monthly updates
+
+### Robots.txt (app/robots.ts)
+- Automatically generated at `/robots.txt`
+- Allows all search engines to crawl public pages
+- Blocks admin and API routes from indexing
+- References sitemap location
+
+### Metadata
+Each page should include proper meta tags for:
+- Title tags (unique per page and language)
+- Meta descriptions
+- Open Graph tags for social sharing
+- Canonical URLs
+- Language alternates (hreflang tags)
+
 ## Git Repository
 
 Current branch: master
