@@ -27,7 +27,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-poppins)', 'sans-serif'],
+        sans: ['var(--font-poppins)', 'var(--font-noto-thai)', 'var(--font-noto-sc)', 'sans-serif'],
         serif: ['var(--font-cinzel)', 'serif'],
       },
       animation: {

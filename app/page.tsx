@@ -91,7 +91,7 @@ export default function HomePage() {
           {/* Package Cards */}
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 max-w-5xl mx-auto">
             {/* Half Day Package */}
-            <div className="bg-tertiary/5 backdrop-blur-lg border border-secondary/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-left hover:-translate-y-2 hover:shadow-2xl transition-all">
+            <div className="bg-tertiary/5 backdrop-blur-lg border border-secondary/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-left hover:-translate-y-2 hover:shadow-2xl transition-all flex flex-col">
               <div className="text-xs tracking-[0.15em] text-secondary mb-3 sm:mb-4 font-medium uppercase">
                 {t('home.services.halfDay.label')}
               </div>
@@ -111,14 +111,14 @@ export default function HomePage() {
 
               <Link
                 href="/services"
-                className="block w-full py-3 sm:py-4 rounded-full border-2 border-secondary text-secondary text-center font-medium text-sm sm:text-base tracking-wide hover:bg-secondary hover:text-primary transition-all"
+                className="block w-full py-3 sm:py-4 rounded-full border-2 border-secondary text-secondary text-center font-medium text-sm sm:text-base tracking-wide hover:bg-secondary hover:text-primary transition-all mt-auto"
               >
                 {t('common.learnMore')}
               </Link>
             </div>
 
             {/* Full Day Package */}
-            <div className="bg-gradient-to-br from-secondary to-accent rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-left relative overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all">
+            <div className="bg-gradient-to-br from-secondary to-accent rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 text-left relative overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all flex flex-col">
               <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-primary text-tertiary px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[9px] sm:text-[10px] tracking-wider font-semibold uppercase">
                 {t('home.services.fullDay.badge')}
               </div>
@@ -144,7 +144,7 @@ export default function HomePage() {
 
               <Link
                 href="/services"
-                className="block w-full py-3 sm:py-4 rounded-full bg-primary text-tertiary text-center font-medium text-sm sm:text-base tracking-wide shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+                className="block w-full py-3 sm:py-4 rounded-full bg-primary text-tertiary text-center font-medium text-sm sm:text-base tracking-wide shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all mt-auto"
               >
                 {t('common.bookThisPackage')}
               </Link>

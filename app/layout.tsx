@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Poppins, Cinzel } from 'next/font/google';
+import { Poppins, Cinzel, Noto_Sans_Thai, Noto_Sans_SC } from 'next/font/google';
 import { cookies } from 'next/headers';
 import { Providers } from './providers';
 import { StructuredData } from '@/components/StructuredData';
@@ -17,6 +17,20 @@ const cinzel = Cinzel({
   weight: ['400', '600', '700'],
   subsets: ['latin'],
   variable: '--font-cinzel',
+  display: 'swap',
+});
+
+const notoSansThai = Noto_Sans_Thai({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['thai', 'latin'],
+  variable: '--font-noto-thai',
+  display: 'swap',
+});
+
+const notoSansSC = Noto_Sans_SC({
+  weight: ['300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  variable: '--font-noto-sc',
   display: 'swap',
 });
 
@@ -107,7 +121,7 @@ export default async function RootLayout({
   const messages = (await import(`@/i18n/messages/${locale}.json`)).default;
 
   return (
-    <html lang={locale} className={`${poppins.variable} ${cinzel.variable}`}>
+    <html lang={locale} className={`${poppins.variable} ${cinzel.variable} ${notoSansThai.variable} ${notoSansSC.variable}`}>
       <head>
         <StructuredData />
       </head>
