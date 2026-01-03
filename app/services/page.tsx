@@ -159,6 +159,34 @@ export default function ServicesPage() {
     },
   ];
 
+  const customPackage = {
+    name: t('services.packages.custom.name'),
+    tagline: t('services.packages.custom.tagline'),
+    description: t('services.packages.custom.description'),
+    price: t('services.packages.custom.priceNote'),
+    features: [
+      t('services.packages.custom.feature1'),
+      t('services.packages.custom.feature2'),
+      t('services.packages.custom.feature3'),
+      t('services.packages.custom.feature4'),
+      t('services.packages.custom.feature5'),
+      t('services.packages.custom.feature6'),
+      t('services.packages.custom.feature7'),
+      t('services.packages.custom.feature8'),
+    ],
+    benefits: [
+      t('services.packages.custom.benefit1'),
+      t('services.packages.custom.benefit2'),
+      t('services.packages.custom.benefit3'),
+      t('services.packages.custom.benefit4'),
+      t('services.packages.custom.benefit5'),
+      t('services.packages.custom.benefit6'),
+      t('services.packages.custom.benefit7'),
+    ],
+    bestFor: t('services.packages.custom.bestFor'),
+    ctaButton: t('services.packages.custom.ctaButton'),
+  };
+
   const bookingProcess = [
     { step: '01', title: t('services.booking.step1.title'), description: t('services.booking.step1.description') },
     { step: '02', title: t('services.booking.step2.title'), description: t('services.booking.step2.description') },
@@ -360,8 +388,75 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* All Packages Include */}
+      {/* Custom Package */}
       <section className="py-12 sm:py-16 md:py-24 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-xs tracking-[0.15em] text-accent mb-4 font-medium uppercase">
+              {t('services.packages.custom.name')}
+            </div>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-4">
+              {customPackage.tagline}
+            </h2>
+            <p className="text-base sm:text-lg leading-relaxed max-w-3xl mx-auto opacity-85">
+              {customPackage.description}
+            </p>
+          </div>
+
+          <div className="rounded-2xl sm:rounded-3xl p-8 sm:p-10 md:p-12 bg-gradient-to-br from-accent/5 via-secondary/5 to-primary/5 border-2 border-accent/20 shadow-xl">
+            <div className="text-center mb-8">
+              <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl mb-2 text-accent">
+                {customPackage.price}
+              </h3>
+              <div className="h-0.5 w-16 mx-auto my-6 bg-gradient-to-r from-transparent via-accent to-transparent" />
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-10 mb-8">
+              <div>
+                <h4 className="font-serif text-lg sm:text-xl mb-4 text-center md:text-left">
+                  {t('services.packages.includes')}
+                </h4>
+                <ul className="space-y-3">
+                  {customPackage.features.map((feature, j) => (
+                    <li key={j} className="flex items-start gap-3 text-sm sm:text-base">
+                      <Check className="flex-shrink-0 text-accent mt-0.5" size={18} />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="font-serif text-lg sm:text-xl mb-4 text-center md:text-left">
+                  {t('services.packages.benefits')}
+                </h4>
+                <ul className="space-y-3">
+                  {customPackage.benefits.map((benefit, j) => (
+                    <li key={j} className="flex items-start gap-3 text-sm sm:text-base">
+                      <Check className="flex-shrink-0 text-secondary mt-0.5" size={18} />
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <p className="text-sm mb-6 p-4 bg-white/80 rounded-lg border-l-4 border-accent">
+              <span className="font-semibold">{t('services.packages.bestForLabel')}</span> {customPackage.bestFor}
+            </p>
+
+            <Link
+              href="/contact"
+              className="block w-full sm:w-auto sm:mx-auto sm:max-w-md py-4 rounded-full text-center font-medium text-base tracking-wide transition-all bg-gradient-to-r from-accent to-primary text-tertiary hover:shadow-xl hover:-translate-y-1"
+            >
+              {customPackage.ctaButton}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* All Packages Include */}
+      <section className="py-12 sm:py-16 md:py-24 px-4 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-8 sm:mb-12 text-center">
             {t('services.packages.allIncludeTitle')}

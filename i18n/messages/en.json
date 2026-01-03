@@ -263,6 +263,29 @@
         "benefit10": "Raw File Access - Professional photographer's toolkit",
         "benefit11": "Custom Album Design - One-of-a-kind creation",
         "bestFor": "Luxury destination weddings, once-in-a-lifetime experience, couples who want everything"
+      },
+      "custom": {
+        "name": "Custom Package",
+        "tagline": "Tailored exclusively to your unique vision and requirements",
+        "description": "Have specific needs or special requests? We create bespoke packages designed around your exact requirements.",
+        "feature1": "Fully Customizable Duration - Choose your ideal timeframe",
+        "feature2": "Personalized Location Selection - Any venue in Chiang Mai or beyond",
+        "feature3": "Flexible Outfit Changes - As many as you need",
+        "feature4": "Custom Photo Deliverables - Decide the number of edited photos",
+        "feature5": "Special Add-Ons Available - Video, drone, underwater, night shoots",
+        "feature6": "Extended Team Options - Additional photographers, videographers, stylists",
+        "feature7": "Unique Concept Development - We bring your creative vision to life",
+        "feature8": "Premium Accommodation Upgrades - Select from luxury resorts",
+        "benefit1": "Your Vision, Your Way - Complete creative control",
+        "benefit2": "No Limitations - If you can dream it, we can do it",
+        "benefit3": "Expert Consultation - We help design your perfect package",
+        "benefit4": "Transparent Pricing - Clear breakdown of all costs",
+        "benefit5": "Priority Scheduling - Flexible dates to match your needs",
+        "benefit6": "Special Occasion Ready - Proposals, anniversaries, vow renewals",
+        "benefit7": "Unique Requirements Welcome - Multi-day shoots, destination travel",
+        "bestFor": "Couples with specific visions, unique location requests, special occasions, extra requirements",
+        "ctaButton": "Design Your Package",
+        "priceNote": "Custom Quote"
       }
     },
     "booking": {
